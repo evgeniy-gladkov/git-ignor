@@ -1,0 +1,58 @@
+имя пользователя Git
+git config --global user.name ”Ivan Ivanov”
+git config --global user.email ivan.ivanov@gmail.com
+
+создание локального репозитория
+git init 
+
+проверяем статус
+git status
+
+добавляем файлы
+git add *
+
+добавляем в коммит
+git commot -m "коментарии к коммиту"
+
+просмотр логов
+git log
+
+clone проекта с git репозитория
+git clone https://github.com/evgeniy-gladkov/mvc.git
+
+добавление репозитория
+git remote add mvc https://github.com/evgeniy-gladkov/mvc.git
+
+
+получение изменений данных с удаленного репозитория
+git fetch [remote-name]
+
+отправка изменений в удаленный репозиторий
+git push mvc master
+
+
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+git checkout номер_хеша - возрат на коммит по номеру хешу
+
+
+git branch - ветки
+git checkout -b newbranch - создание новой ветки
+git checkout master - переключаемся на ветку мастер
+git marge имя_ветки - слияние веток (находимся в мастере <- добавляем имя_ветки)
+
+git remote add origin https://github.com/evgeniy-gladkov/mvc.git
+git push -u origin master
+
+git push origin master - origin удаленный репозиторий master локальный (origin <-- master)
+
+git pull origin master - выкачиваем новое изменение с origin на локальный master (origin --> master)
+git pull --rebase origin master - pull выкачиваем без конфликта изменения в одном и том же файле
+
+
+
